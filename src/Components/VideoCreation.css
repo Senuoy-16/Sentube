@@ -1,0 +1,186 @@
+.container{overflow-y: auto;}
+
+.video_creation_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.video_creation_header h1{
+    display: block;
+    width: max-content;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 2em;
+    color: var(--black-color);
+}
+.video_creation_header .add_video_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--black-color);
+    background-color: var(--black-color);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.video_creation_header .add_video_btn:hover{background-color: var(--white-color); color: var(--black-color);}
+.add_video_btn:hover svg{fill: var(--black-color) !important;}
+.add_video_btn svg{fill: var(--white-color) !important;}
+
+.video_creation_body th, 
+.video_creation_body td{
+    padding: 5px 0; 
+    border: 1px solid transparent;
+}
+
+.video_creation_body td{
+    padding: 20px 0; 
+    border: 1px solid transparent;
+}
+
+.video_creation_body table{
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--black-color);
+    padding: 5px 0; 
+    border: 1px solid transparent;
+}
+
+
+.video_creation_body th{
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.video_creation_body .Video_info{
+    display: flex;
+    align-items: center;
+}
+
+.video_creation_body .Video_info .thumbnail{
+    width: 150px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.video_creation_body .Video_info .thumbnail img{
+    width: 100%;
+    height: 100%;
+}
+.video_creation_body .Video_info .thumbnail .duration{
+    position: absolute;
+    right: .35rem;
+    bottom: 0.3rem;
+    font-size: .575rem;
+    padding: .2em 0.3rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: var(--overlay-dark-color);
+}
+
+.video_creation_body .description .modification_video{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.video_creation_body .description .title{cursor: pointer;}
+
+
+.video_creation_body .modification_video{cursor: pointer;}
+.video_creation_body .modification_video p{
+    margin-left: 5px;
+    font-size: .8em;
+    color: gray;
+    transition: all .3s ease;
+}
+.video_creation_body .modification_video svg{
+    fill: gray !important;
+    transition: all .3s ease !important;
+}
+
+.video_creation_body .supprimer{ cursor: pointer;}
+.video_creation_body .supprimer:hover svg{ transform: scale(1.1);}
+
+.video_creation_body .modification_video:hover p,
+.video_creation_body .modification_video:hover svg{
+    color: var(--black-color);
+    fill: var(--black-color) !important;
+}
+
+.list_empty_video_creation p{
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 2em;
+    color: var(--black-color);
+    text-align: center;
+    margin: 2em 0;
+}
+
+
+
+/*************************************************MODAL VIDEO CREATION*************************************************/
+
+
+@media (max-width:1090px){
+    .video_creation_body .Video_info{
+        gap: 10px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .video_creation_header h1{
+        font-size: 1.8em;
+    }
+    .video_creation_header .add_video_btn{
+        padding: 5px 15px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width:890px){
+    .video_creation_body th, 
+    .video_creation_body td{
+        padding: 5px 0; 
+        border: 1px solid transparent;
+        font-size: .9em;
+        text-align: center;
+    }
+    .modal_video_creation .modal_container{
+        width: 70vw;
+    }
+}
+
+@media (max-width:680px){
+    .video_creation_body th, 
+    .video_creation_body td{
+        font-size: .8em;
+        font-weight: 400;
+    }
+
+    .video_creation_body .Video_info .thumbnail{
+        width: 100px;
+        height: 60px;
+    }
+
+    .video_creation_body .description{text-align: left;}
+    
+    .video_creation_body .modification_video p{
+        margin-left: 3px;
+        text-align: right;
+    }
+    .video_creation_body svg{
+        font-size: 16px;
+    }
+    .list_empty_video_creation p{margin: 4em 0;}
+
+
+}

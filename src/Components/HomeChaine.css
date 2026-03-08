@@ -1,0 +1,89 @@
+.home_container{
+    width: 80%;
+    margin: 1em auto;
+}
+
+.home_header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0 10px;
+    margin-bottom: 30px;
+}
+.home_header .picture_user{box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;}
+.home_header .picture_user{
+    height: 160px; 
+    width: 160px; 
+    border-radius: 50%; 
+    overflow: hidden;
+    display: flex;
+}
+.home_header .picture_user img{
+    width: 100%; height: 100%;
+    object-fit: contain;
+}
+
+.home_header .infos_user h1{
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: var(--black-color);
+    margin-bottom: 5px;
+}
+.home_header .infos_user .more_infos_user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--black-color);
+    margin-bottom: 15px;
+}
+.more_infos_user p{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 1.4rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.more_infos_user p.username{font-weight: 600;}
+
+
+.btn_modify_chaine{
+    width: 90%;
+    padding: 9px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-bottom: .6em;
+}
+.btn_modify_chaine:hover{ background-color: var(--primary-color); color: var(--white-color);}
+
+.home_sections{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+.home_sections .link_section{
+    text-decoration: none;
+    color: var(--black-color);
+    display: block;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+.home_sections .link_section:hover{
+    border-bottom: 2px solid var(--black-color) !important;
+}
+
+@media (max-width:600px) {
+    .home_container{width: 90%;margin: 1em auto;}
+    .home_header .picture_user,
+    .home_header .picture_user img{height: 120px; width: 120px;}
+    .home_header .infos_user h1{font-size: 1.5em;}
+    .more_infos_user p, .btn_modify_chaine{font-size: .9em;}
+    .btn_modify_chaine{width: 90%;}
+
+}

@@ -1,0 +1,98 @@
+.video-js {
+  border-radius: 15px; /* Add this */
+  overflow: hidden; /* Usually needed with border-radius */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.vjs-poster img{
+    border-radius: 15px !important;
+}
+
+.video-js .vjs-control-bar {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0)
+  ) !important;
+  height: 20% !important;
+  padding: 7% 1% 1% !important;
+}
+
+.video-js .vjs-big-play-button {
+  border: 0.06666em solid #ffffff33 !important;  
+  color: #ff0000 !important;
+}
+
+.video-js .vjs-play-progress {
+  background-color: #ff0000 !important; /* rouge YouTube */
+}
+
+.video-js .vjs-slider {
+  background: rgba(255,255,255,0.3) !important;
+}
+
+.video-js .vjs-volume-level {
+  background-color: #ff0000 !important;
+}
+
+.vjs-volume-panel,
+.vjs-icon-placeholder:before{
+    transition: all .3s ease !important;
+}
+.vjs-volume-panel:hover{
+    background-color: rgba(255, 255, 255, 0.2) ;
+    border-radius: 20px;
+    padding: 0 5px;
+}
+.vjs-icon-placeholder:hover::before{
+    background-color: rgba(255, 255, 255, 0.2) ;
+    border-radius: 20px;
+    padding: 0 5px;
+}
+
+.vjs-icon-placeholder:before,
+.video-js .vjs-time-control,
+.vjs-playback-rate > .vjs-menu-button,
+.vjs-playback-rate .vjs-playback-rate-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vjs-playback-rate .vjs-menu {
+  width: 8em !important;
+  left: 0em;
+}
+
+.vjs-live{
+    background-color: rgba(255, 255, 255, 0.2) ;
+    border-radius: 20px;
+    padding: 0 5px;
+}
+.vjs-live .vjs-time-control,
+.vjs-live .vjs-time-divider,
+.video-js .vjs-current-time,
+.video-js .vjs-duration {
+  display: flex !important;
+  padding: 0 !important;
+}
+.video-js .vjs-current-time{padding-left: 5px !important;}
+
+.vjs-remaining-time{
+    display: none !important;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .video-js .vjs-control-bar {
+        padding: 5% 1% 1% !important;
+    }
+    .video-js {
+      border-radius: 0;
+    }
+    .vjs-poster img{
+        border-radius: 0 !important;
+    }
+}

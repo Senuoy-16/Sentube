@@ -1,0 +1,165 @@
+.sign_container{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    padding: 0em 3em 0;
+    height: 90vh;
+}
+
+.sign_left_content {
+    padding-top: 2em;
+    height: 100%;
+    overflow: hidden;
+}
+.sign_left_content .slang{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.sign_left_content .slang h1{
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+    line-height: 2em;
+    color: var(--black-color);
+    margin-top: 2em;
+}
+.sign_left_content .slang h1 span{
+    color: var(--primary-color);
+}
+.sign_left_content .slang img{
+    text-align: center;
+    width: 36em; height: 36em;
+}
+
+
+/**************************right_content********************************/
+.sign_right_content{
+    height: 100%;
+    overflow: hidden;
+    border-left: 3px solid var(--border-color);
+    padding-top: 10em;
+    padding-left: 1em;
+}
+.sign_right_content h1{
+    display: block;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 2em;
+    color: var(--black-color);
+    margin-bottom: 1em;
+}
+
+.form_signin{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form_signin .submit_form_btn{
+    width: 85%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-bottom: .6em;
+}
+.form_signin .submit_form_btn:not(:disabled):hover{background-color: var(--primary-hover-color);}
+
+.form_signin .submit_form_btn:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7; 
+}
+
+.linking_sign_pages{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    color: var(--black-color);
+}
+.linking_sign_pages span{
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+.linking_sign_pages span:hover{
+    border-bottom: 1px solid var(--primary-hover-color);
+}
+/**************************right_content********************************/
+
+
+
+
+
+
+@media (max-width:1442px){
+    .sign_container{
+        grid-template-columns: 50vw 50vw;
+        padding: 0em 0em 0;
+    }
+    .css-xe84o7-MuiFormControl-root-MuiTextField-root,
+    .css-2f6em1-MuiFormControl-root{
+        width: 90% !important;
+    }
+    .form_signin .submit_form_btn{
+        width: 90%;
+    }
+}
+
+
+@media (max-width:1096px){
+    .sign_container{
+        grid-template-columns: 90vw;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sign_left_content{
+        display: none;
+    }
+    .form_signin .submit_form_btn{
+        width: 100%;
+    }
+}
+@media (max-width:1096px) and (min-width:560px){
+    .sign_right_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: none;
+        border: none;
+        padding-top: 10em;
+        padding-left: 0;
+    }
+    .css-xe84o7-MuiFormControl-root-MuiTextField-root,
+    .css-2f6em1-MuiFormControl-root{
+        width: 100% !important;
+    }
+}
+@media (max-width:560px){
+    .sign_right_content{
+        overflow: none;
+        border: none;
+        padding-top: 10em;
+        padding-left: 0;
+    }
+    .css-xe84o7-MuiFormControl-root-MuiTextField-root,
+    .css-2f6em1-MuiFormControl-root{
+        width: 450px !important;
+    }
+}
+
+
+
+

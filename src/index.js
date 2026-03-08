@@ -3,11 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './Context/AuthContext';
+import { Toaster } from 'react-hot-toast';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <AuthProvider>
+          <Toaster
+            position="bottom-center"
+            toastOptions={{
+              className: '',
+              duration: 4000,
+            }}
+          />
+          <App />
+      </AuthProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
