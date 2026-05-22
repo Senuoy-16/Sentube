@@ -1,3 +1,7 @@
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Material UI](https://img.shields.io/badge/Material_UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
 # Sentube
 
 **Sentube** is a **YouTube clone** built with **React** and **Supabase**. It allows users to upload, watch, and interact with videos, while also managing their watch history and watchlist. The platform includes user authentication and advanced features like video suggestions and engagement tracking.  
